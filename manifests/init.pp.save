@@ -1,0 +1,7 @@
+class host {
+
+host { 'trainning.puppetlabs.vm':
+    ip => '10.100.10.50',
+            host_aliases => 'trainning_VM',
+                    }
+                    }

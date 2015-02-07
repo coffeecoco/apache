@@ -1,0 +1,11 @@
+NameVirtualHost <%= @vhost_name %>:<%= @port %>
+<VirtualHost <%= @vhost_name %>:<%= @port %>> # note the double bracket
+ServerName <%= @servername %>
+DocumentRoot <%= @docroot %>
+<Directory <%= @docroot %>>                   # note the double bracket
+  Options <%= @options %>
+  AllowOverride None
+  Order allow,deny
+  allow from all
+</Directory>
+</VirtualHost>
